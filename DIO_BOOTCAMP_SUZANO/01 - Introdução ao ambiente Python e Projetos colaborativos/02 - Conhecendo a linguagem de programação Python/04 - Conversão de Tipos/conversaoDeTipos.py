@@ -41,3 +41,7 @@ idade = "28"
 print(float(preco))
 
 print(int(idade))
+
+#de STRING para LISTA
+preco = "10.50"
+idade = "28"
