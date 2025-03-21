@@ -31,6 +31,46 @@ print ("Olá, me chamo {4}. Eu tenho {3} anos de idade, trabalho com {2} e estou
 #Tambem é possivel fazer isto pela posição no format igual abaixo de forma nomeada
 print ("Olá, me chamo {nome}. Eu tenho {idade} anos de idade, trabalho com {profissao} e estou matriculado no curso de {linguagem} e ganho {salario:.2f}." .format (nome=nome, idade=idade, profissao=profissao, linguagem=linguagem, salario=salario))
 
+#Tambem é possivel fazer isto pela posição no format igual abaixo de forma com dicionario
+print ("com dicionario")
+pessoa = {
+    "nome": "Guilherme",
+    "idade": 28,
+    "profissao": "Programador",
+    "linguagem": "Python",
+    "salario": 15000
+}
+print ("Olá, me chamo {nome}. Eu tenho {idade} anos de idade, trabalho com {profissao} e estou matriculado no curso de {linguagem} e ganho {salario:.2f}." .format (**pessoa))
+
 ############################################################################
 
-CONTINUAR 10:29
+#Forma com F-STRING
+print()
+print()
+
+print("Forma com F-STRING")
+nome = "Guilherme"
+idade = 28
+profissao = "Programador"
+linguagem = "Python"
+salario = 15000.0
+
+print()
+print (f"Olá, me chamo {nome}. Eu tenho {idade} anos de idade, trabalho com {profissao} e estou matriculado no curso de {linguagem} e ganho {salario:.2f}.")
+
+print()
+print()
+
+print("formatando valores")
+
+# OBS: o :.2f é para ter duas casas decimais após a virgula, se for formatar antes de virgula 10.2f ele FORMATA "          3.14"
+
+PI = 3.14159
+
+#Formata com duas casa decimais
+print(f"O valor de PI é: {PI:.2f}")
+
+#OU
+
+#Formata com duas casa decimais e adiciona 10 posições antes da virgula.
+print(f"O valor de PI é: {PI:10.2f}")
