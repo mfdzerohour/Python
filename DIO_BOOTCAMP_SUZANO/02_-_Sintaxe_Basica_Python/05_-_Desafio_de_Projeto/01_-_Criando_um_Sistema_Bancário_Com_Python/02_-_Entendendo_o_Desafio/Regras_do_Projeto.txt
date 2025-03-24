@@ -1,0 +1,5 @@
+1 - 3 Saques por dia
+2 - Limite maximo de saque 500
+3 - Não pode sacar valores negativos
+4 - Tem que poder tirar todas as 3 operações
+5 - Se não tiver saldo em conta, deve exibir uma mensagem informando que ele não possui saldo em conta
